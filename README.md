@@ -33,7 +33,7 @@ Designed for vinyl stands, desk displays, and ambient music visuals.
 
 ## 🔌 Wiring
 
-### OLED (SSD1309, I²C)
+### OLED Display (SSD1309, I²C)
 
 | OLED Pin | ESP32-S3 Pin |
 |----------|--------------|
@@ -99,8 +99,10 @@ Tools → Board → Boards Manager → search “ESP32” → Install
 
 ### 📁 Cloning the Repository
 
+```shell
 git clone https://github.com/bashlykevich/teide-eq.git
 cd teide-eq
+```
 
 Open:
 main.ino in Arduino IDE
