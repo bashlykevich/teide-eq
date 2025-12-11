@@ -99,8 +99,8 @@ Tools → Board → Boards Manager → search “ESP32” → Install
 
 ### 📁 Cloning the Repository
 
-git clone https://github.com/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/bashlykevich/teide-eq.git
+cd teide-eq
 
 Open:
 main.ino in Arduino IDE
