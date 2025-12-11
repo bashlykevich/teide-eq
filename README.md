@@ -52,4 +52,104 @@ Designed for vinyl stands, desk displays, and ambient music visuals.
 #define I2S_SCK 14   // BCLK
 #define I2S_SD  32   // Data
 ```
+| Microphone Pin	ESP32-S3 Pin
+|----------|--------------|
+| WS / L/R CLK | 15 |
+| SCK / BCLK | 14 |
+| SD (Data) | 32 |
+| VCC | 3.3V |
+| GND | GND |
 
+---
+
+### Rotary Encoder (KY-040)
+
+| Encoder Pin | ESP32-S3 Pin |
+|-------------|--------------|
+| CLK | 35 |
+| DT | 34 |
+| SW (Button) | 33 |
+| VCC | 3.3V |
+| GND | GND |
+
+---
+
+## 🛠 Installing the Development Environment
+
+### 1️⃣ Install Arduino IDE
+
+https://www.arduino.cc/en/software
+
+### 2️⃣ Install Git
+
+https://git-scm.com/downloads
+
+### 3️⃣ Add ESP32 Board Support
+
+Arduino IDE → Preferences → Additional Boards URLs:
+
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+Then install:
+Tools → Board → Boards Manager → search “ESP32” → Install
+
+---
+
+## 📁 Cloning the Repository
+
+git clone https://github.com/<your-repo>.git
+cd <your-repo>
+
+Open:
+main.ino in Arduino IDE
+
+---
+
+## ⚙️ Compile & Upload
+
+Select the Board:
+
+Tools → Board → ESP32S3 Dev Module
+
+Recommended settings:
+```
+Setting	Value
+USB CDC On Boot	Enabled
+CPU Frequency	240 MHz
+USB Mode	CDC Only
+Flash Size	16MB (if available)
+Upload Speed	921600
+```
+
+### Upload Normally
+
+Connect via USB-C and click Upload.
+
+### If Upload Fails
+
+Hold BOOT, click Upload, release when “Connecting…” appears.
+
+---
+
+## 🧪 Serial Debugging
+
+Open:
+Tools → Serial Monitor → 115200 baud
+
+You’ll see:
+	•	encoder rotation
+	•	sensitivity levels
+	•	optional FFT logs
+
+---
+
+## 🛡 License
+
+MIT License — free to modify & build upon.
+
+---
+
+## 🙌 Credits
+
+Made with ESP32-S3, FFT, I²S, and a lot of tinkering.
+Inspired by classic spectral visualizers (Winamp, VLC, LED panels).
