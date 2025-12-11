@@ -52,8 +52,8 @@ Designed for vinyl stands, desk displays, and ambient music visuals.
 #define I2S_SCK 14   // BCLK
 #define I2S_SD  32   // Data
 ```
-| Microphone Pin	ESP32-S3 Pin
-|----------|--------------|
+| Microphone Pin | ESP32-S3 Pin |
+|----------------|--------------|
 | WS / L/R CLK | 15 |
 | SCK / BCLK | 14 |
 | SD (Data) | 32 |
@@ -74,17 +74,19 @@ Designed for vinyl stands, desk displays, and ambient music visuals.
 
 ---
 
-## 🛠 Installing the Development Environment
+## 🛠 Developer Quick start
 
-### 1️⃣ Install Arduino IDE
+### Installing the Development Environment
+
+#### 1️⃣ Install Arduino IDE
 
 https://www.arduino.cc/en/software
 
-### 2️⃣ Install Git
+#### 2️⃣ Install Git
 
 https://git-scm.com/downloads
 
-### 3️⃣ Add ESP32 Board Support
+#### 3️⃣ Add ESP32 Board Support
 
 Arduino IDE → Preferences → Additional Boards URLs:
 
@@ -95,7 +97,7 @@ Tools → Board → Boards Manager → search “ESP32” → Install
 
 ---
 
-## 📁 Cloning the Repository
+### 📁 Cloning the Repository
 
 git clone https://github.com/<your-repo>.git
 cd <your-repo>
@@ -105,7 +107,7 @@ main.ino in Arduino IDE
 
 ---
 
-## ⚙️ Compile & Upload
+### ⚙️ Compile & Upload
 
 Select the Board:
 
@@ -131,7 +133,7 @@ Hold BOOT, click Upload, release when “Connecting…” appears.
 
 ---
 
-## 🧪 Serial Debugging
+### 🧪 Serial Debugging
 
 Open:
 Tools → Serial Monitor → 115200 baud
